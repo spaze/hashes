@@ -1,0 +1,2 @@
+# hashes
+PHP hash "collisions"
