@@ -8,6 +8,9 @@ For **MD5** and **SHA-1**, it uses the long-known trick (it actually is a docume
 ## [Plaintext](plaintext.md)
 For **plaintext**, it uses various conversion tricks. First password will *match* just the second one.
 
+## [bcrypt](bcrypt.md)
+**bcrypt** truncates passwords to a maximum length of 72 characters. The passwords *match* if the first 72 characters of both passwords match.
+
 ### Conclusion
 Use `===` when comparing anything in PHP, not `==`. And use [`password_hash()`](https://php.net/function.password-hash) and [`password_verify()`](https://php.net/function.password-verify) for password hashing in PHP, don't use MD5 or SHA-1.
 
@@ -17,3 +20,4 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - MD5: [Tweet](https://twitter.com/spazef0rze/status/439352552443084800), [code](http://3v4l.org/2vrMi)
 - SHA-1: [Tweet](https://twitter.com/spazef0rze/status/523010190900469760), [code](http://3v4l.org/tT4l8)
 - Plaintext: [Tweet](https://twitter.com/spazef0rze/status/522882677452832768), [code](http://3v4l.org/K3ljr)
+- bcrypt: [code](https://3v4l.org/2qc8j)
