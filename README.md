@@ -6,7 +6,7 @@ Register with *password 1* and then sign in with *password 2*. If you're in then
 For **MD5** and **SHA-1**, it uses the long-known trick (it actually is a documented feature, see [*PHP type comparison tables*](https://php.net/types.comparisons) & [*Floating point numbers*](https://php.net/types.float)) that for PHP `'0e1' == '00e2' == '0'`, it just uses it for *practical* purposes. Any password *matches* any other password from the list. This is a different trick than *integral strings overflowing into floating point numbers*, just spot the difference between [these two lines](https://3v4l.org/581R5).
 
 ## [Plaintext](plaintext.md)
-For **plaintext**, it uses various conversion tricks. First password will *match* just the second one.
+For **plaintext**, it uses various conversion tricks. First password will *match* just the second one. Tricks are grouped by PHP versions allowing them.
 
 ## [bcrypt](bcrypt.md)
 **bcrypt** truncates passwords to a maximum length of 72 characters. The passwords *match* if the first 72 characters of both passwords match.
