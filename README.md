@@ -1,4 +1,4 @@
-# PHP hash "collisions"
+# Magic hashes – PHP hash "collisions"
 
 Register with *password 1* and then sign in with *password 2*. If you're in then the storage uses specified algorithm to hash the password and PHP uses `==` to compare them (for MD5, SHA-1, and plaintext).
 
@@ -15,7 +15,7 @@ For **plaintext**, it uses various conversion tricks. First password will *match
 If you use a password longer than 64 bytes and hash it with **PBKDF2-HMAC-SHA1**, it is first *pre-hashed* with SHA1, so `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` because `sha1(password1) === bin2hex(password2)`.
 
 ### Conclusion
-Use `===` when comparing anything in PHP, not `==`. And use [`password_hash()`](https://php.net/function.password-hash) and [`password_verify()`](https://php.net/function.password-verify) for password hashing in PHP, don't use MD5 or SHA-1.
+Use `===` when comparing anything* in PHP, not `==`. And use [`password_hash()`](https://php.net/function.password-hash) and [`password_verify()`](https://php.net/function.password-verify) for password hashing in PHP, don't use MD5 or SHA-1. *Use [`hash_equals()`](https://php.net/function.hash-equals) when comparing hashes.
 
 ### History
 It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552443084800), I've generated `QNKCDZO` and `240610708` in February 2014 and it has since spread all over the intertubes. Just [google it](https://www.google.cz/search?q=%22QNKCDZO%22).
