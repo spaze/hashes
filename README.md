@@ -14,6 +14,9 @@ For **plaintext**, it uses various conversion tricks. First password will *match
 ## [PBKDF2](pbkdf2.md)
 If you use a password longer than 64 bytes and hash it with **PBKDF2-HMAC-SHA1**, it is first *pre-hashed* with SHA1, so `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` because `sha1(password1) === bin2hex(password2)`.
 
+## [Tiger/192,3](tiger192,3.md) and [SHA-224](sha224.md)
+Right now there's just one magic hash in each thanks to [Norbert Tihanyi](https://twitter.com/TihanyiNorbert), more will be hopefully added in the future.
+
 ### Conclusion
 Use `===` when comparing anything* in PHP, not `==`. And use [`password_hash()`](https://php.net/function.password-hash) and [`password_verify()`](https://php.net/function.password-verify) for password hashing in PHP, don't use MD5 or SHA-1. *Use [`hash_equals()`](https://php.net/function.hash-equals) when comparing hashes.
 
@@ -25,3 +28,5 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - Plaintext: [Tweet](https://twitter.com/spazef0rze/status/522882677452832768), [code](http://3v4l.org/K3ljr)
 - bcrypt: [code](https://3v4l.org/2qc8j)
 - PBKDF2: [Tweet by Christian "CodesInChaos" Winnerlein](https://twitter.com/CodesInChaos/status/422073818228613121), [as explained by Mathias Bynens](https://mathiasbynens.be/notes/pbkdf2-hmac), [code](https://3v4l.org/RROMo)
+- Tiger/192,3: [Tweet by Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1133436583183568901), [code](https://3v4l.org/LGYkq)
+- SHA-224:  [Tweet by Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1138075224010833921), [code](https://3v4l.org/CG5Ro)
