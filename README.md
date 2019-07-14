@@ -23,11 +23,11 @@ Use `===` when comparing anything* in PHP, not `==`. And use [`password_hash()`]
 ### History
 It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552443084800), I've generated `QNKCDZO` and `240610708` in February 2014 and it has since spread all over the intertubes. Just [google it](https://www.google.cz/search?q=%22QNKCDZO%22).
 
-- MD5: [Tweet](https://twitter.com/spazef0rze/status/439352552443084800), [code](http://3v4l.org/2vrMi)
-- SHA-1: [Tweet](https://twitter.com/spazef0rze/status/523010190900469760), [code](http://3v4l.org/tT4l8)
+- MD5: [Tweet](https://twitter.com/spazef0rze/status/439352552443084800), [code](http://3v4l.org/2vrMi), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4)
+- SHA-1: [Tweet](https://twitter.com/spazef0rze/status/523010190900469760), [code](http://3v4l.org/tT4l8), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4)
 - Plaintext: [Tweet](https://twitter.com/spazef0rze/status/522882677452832768), [code](http://3v4l.org/K3ljr)
 - bcrypt: [code](https://3v4l.org/2qc8j)
 - PBKDF2 by [Christian "CodesInChaos" Winnerlein](https://twitter.com/CodesInChaos/status/422073818228613121), [as explained by Mathias Bynens](https://mathiasbynens.be/notes/pbkdf2-hmac), [code](https://3v4l.org/RROMo)
 - Tiger/192,3 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1133436583183568901)
 - SHA-224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1138075224010833921), [hops](https://github.com/spaze/hashes/pull/2)
-- SHA-256 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1148586399207178241), [Chick3nman](https://github.com/spaze/hashes/pull/3)
+- SHA-256 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1148586399207178241), [Chick3nman](https://github.com/spaze/hashes/pull/3), [roycewilliams](https://github.com/spaze/hashes/pull/4)
