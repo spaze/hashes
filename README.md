@@ -2,8 +2,8 @@
 
 Register with *password 1* and then sign in with *password 2*. If you're in then the storage uses specified algorithm to hash the password and PHP uses `==` to compare them (for MD5, SHA-1, and plaintext).
 
-## [MD5](md5.md) and [SHA-1](sha1.md)
-For **MD5** and **SHA-1**, it uses the long-known trick (it actually is a documented feature, see [*PHP type comparison tables*](https://php.net/types.comparisons) & [*Floating point numbers*](https://php.net/types.float)) that for PHP `'0e1' == '00e2' == '0'`, it just uses it for *practical* purposes. Any password *matches* any other password from the list. This is a different trick than *integral strings overflowing into floating point numbers*, just spot the difference between [these two lines](https://3v4l.org/581R5).
+## [MD5](md5.md), [SHA-1](sha1.md), [SHA-224](sha224.md), [SHA-256](sha256.md)
+For **MD5**, **SHA-1** and **SHA-2 family**, it uses the long-known trick (it actually is a documented feature, see [*PHP type comparison tables*](https://php.net/types.comparisons) & [*Floating point numbers*](https://php.net/types.float)) that for PHP `'0e1' == '00e2' == '0'`, it just uses it for *practical* purposes. Any password *matches* any other password from the list. This is a different trick than *integral strings overflowing into floating point numbers*, just spot the difference between [these two lines](https://3v4l.org/581R5).
 
 ## [Plaintext](plaintext.md)
 For **plaintext**, it uses various conversion tricks. First password will *match* just the second one. Tricks are grouped by PHP versions allowing them.
@@ -14,7 +14,7 @@ For **plaintext**, it uses various conversion tricks. First password will *match
 ## [PBKDF2](pbkdf2.md)
 If you use a password longer than 64 bytes and hash it with **PBKDF2-HMAC-SHA1**, it is first *pre-hashed* with SHA1, so `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` because `sha1(password1) === bin2hex(password2)`.
 
-## [Tiger/192,3](tiger192,3.md), [SHA-224](sha224.md), [SHA-256](sha256.md)
+## [Tiger/192,3](tiger192,3.md)
 Right now there's just one magic hash in each thanks to [Norbert Tihanyi](https://twitter.com/TihanyiNorbert), more will be hopefully added in the future.
 
 ### Conclusion
