@@ -1,5 +1,5 @@
 ```
-# Anonymous source, 2010
+# James M. Hall, 2010 (https://slashdot.org/submission/1381082/Traditional-DES-collision)
 hiH9IOyyrrl4k:cqjmide
 hiH9IOyyrrl4k:ifpqgio
 # @hops_ch
