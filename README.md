@@ -60,7 +60,7 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - PBKDF2 by [Christian "CodesInChaos" Winnerlein](https://twitter.com/CodesInChaos/status/422073818228613121), [as explained by Mathias Bynens](https://mathiasbynens.be/notes/pbkdf2-hmac), [code](https://3v4l.org/RROMo)
 - Tiger/192,3 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1133436583183568901)
 - SHA-224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1138075224010833921), [hops](https://github.com/spaze/hashes/pull/2), [0xb0bb](https://github.com/0xb0bb)
-- SHA-256 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1148586399207178241), [Chick3nman](https://github.com/spaze/hashes/pull/3), [roycewilliams](https://github.com/spaze/hashes/pull/4)
+- SHA-256 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1148586399207178241), [Chick3nman](https://github.com/spaze/hashes/pull/3), [roycewilliams](https://github.com/spaze/hashes/pull/4), [matlink](https://github.com/spaze/hashes/pull/13)
 - CRC32, CRC32b, FNV-1a/32, FNV-1a/64, FNV-1/32, FNV-1/64, HAVAL-128,3, HAVAL-128,4, HAVAL-128,5, HAVAL-160,3, HAVAL-160,4, HAVAL-160,5, JOAAT, MD2, MD4, RIPEMD-128, RIPEMD-160, Tiger/128,3, Tiger/128,4, Tiger/160,3, Tiger/160,4 by [0xb0bb](https://github.com/0xb0bb)
 
 ### How to calculate your own
