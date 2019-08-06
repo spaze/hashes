@@ -41,8 +41,8 @@ For **plaintext**, it uses various conversion tricks. First password will *match
 ## [bcrypt](bcrypt.md)
 **bcrypt** truncates passwords to a maximum length of 72 characters. The passwords *match* if the first 72 characters of both passwords match.
 
-## [PBKDF2-HMAC-SHA1](pbkdf2-sha1.md), [PBKDF2-HMAC-SHA224](pbkdf2-sha224.md)
-If you use a password longer than 64 bytes and hash it with **PBKDF2-HMAC-SHA1**, it is first *pre-hashed* with SHA1, so `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` because `sha1(password1) === bin2hex(password2)`. The similar *pre-hashing* is applied in case of **PBKDF2-HMAC-SHA224**.
+## [PBKDF2-HMAC-SHA1](pbkdf2-sha1.md), [PBKDF2-HMAC-SHA224](pbkdf2-sha224.md), [PBKDF2-HMAC-SHA256](pbkdf2-sha256.md)
+If you use a password longer than 64 bytes and hash it with **PBKDF2-HMAC-SHA1**, it is first *pre-hashed* with SHA1, so `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` because `sha1(password1) === bin2hex(password2)`. The similar *pre-hashing* is applied in case of **PBKDF2-HMAC-SHA224** and **PBKDF2-HMAC-SHA256**.
 
 ## [Tiger/192,3](tiger192,3.md)
 Right now there's just one magic hash in each thanks to [Norbert Tihanyi](https://twitter.com/TihanyiNorbert), more will be hopefully added in the future.
@@ -59,6 +59,7 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - bcrypt: [code](https://3v4l.org/2qc8j)
 - PBKDF2-HMAC-SHA1 by [Christian "CodesInChaos" Winnerlein](https://twitter.com/CodesInChaos/status/422073818228613121), [as explained by Mathias Bynens](https://mathiasbynens.be/notes/pbkdf2-hmac), [code](https://3v4l.org/RROMo)
 - PBKDF2-HMAC-SHA224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1158643999089053696), [code](https://3v4l.org/kuAPb)
+- PBKDF2-HMAC-SHA256 by [Jens 'atom' Steube](https://twitter.com/hashcat/status/1158788752657047552), [code](https://3v4l.org/p4AqD)
 - Tiger/192,3 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1133436583183568901)
 - SHA-224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1138075224010833921), [hops](https://github.com/spaze/hashes/pull/2), [0xb0bb](https://github.com/0xb0bb)
 - SHA-256 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1148586399207178241), [Chick3nman](https://github.com/spaze/hashes/pull/3), [roycewilliams](https://github.com/spaze/hashes/pull/4), [matlink](https://github.com/spaze/hashes/pull/13)
