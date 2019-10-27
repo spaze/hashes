@@ -53,15 +53,15 @@ Use `===` when comparing anything* in PHP, not `==`. And use [`password_hash()`]
 ### History
 It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552443084800), I've generated `QNKCDZO` and `240610708` in February 2014 and it has since spread all over the intertubes. Just [google it](https://www.google.cz/search?q=%22QNKCDZO%22).
 
-- MD5: [Tweet](https://twitter.com/spazef0rze/status/439352552443084800), [code](http://3v4l.org/2vrMi), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4), [Norbert Tihanyi](https://twitter.com/TihanyiNorbert), [ethernetlord](https://github.com/ethernetlord), [0xb0bb](https://github.com/0xb0bb)
-- SHA-1: [Tweet](https://twitter.com/spazef0rze/status/523010190900469760), [code](http://3v4l.org/tT4l8), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4), [0xb0bb](https://github.com/0xb0bb), [matlink](https://github.com/matlink)
+- MD5: [Tweet](https://twitter.com/spazef0rze/status/439352552443084800), [code](http://3v4l.org/2vrMi), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4), [Norbert Tihanyi](https://twitter.com/TihanyiNorbert), [ethernetlord](https://github.com/ethernetlord), [0xb0bb](https://github.com/0xb0bb), [myst404](https://offsec.almond.consulting/super-magic-hash.html)
+- SHA-1: [Tweet](https://twitter.com/spazef0rze/status/523010190900469760), [code](http://3v4l.org/tT4l8), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4), [0xb0bb](https://github.com/0xb0bb), [matlink](https://github.com/matlink), [myst404](https://offsec.almond.consulting/super-magic-hash.html)
 - Plaintext: [Tweet](https://twitter.com/spazef0rze/status/522882677452832768), [code](http://3v4l.org/K3ljr)
 - bcrypt: [code](https://3v4l.org/2qc8j)
 - PBKDF2-HMAC-SHA1 by [Christian "CodesInChaos" Winnerlein](https://twitter.com/CodesInChaos/status/422073818228613121), [as explained by Mathias Bynens](https://mathiasbynens.be/notes/pbkdf2-hmac), [code](https://3v4l.org/RROMo)
 - PBKDF2-HMAC-SHA224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1158643999089053696), [code](https://3v4l.org/kuAPb)
 - PBKDF2-HMAC-SHA256 by [Jens 'atom' Steube](https://twitter.com/hashcat/status/1158788752657047552), [code](https://3v4l.org/p4AqD)
 - Tiger/192,3 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1133436583183568901)
-- SHA-224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1138075224010833921), [hops](https://github.com/spaze/hashes/pull/2), [0xb0bb](https://github.com/0xb0bb)
+- SHA-224 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1138075224010833921), [hops](https://github.com/spaze/hashes/pull/2), [0xb0bb](https://github.com/0xb0bb), [myst404](https://offsec.almond.consulting/super-magic-hash.html)
 - SHA-256 by [Norbert Tihanyi](https://twitter.com/TihanyiNorbert/status/1148586399207178241), [Chick3nman](https://github.com/spaze/hashes/pull/3), [roycewilliams](https://github.com/spaze/hashes/pull/4), [matlink](https://github.com/spaze/hashes/pull/13)
 - CRC32, CRC32b, FNV-1a/32, FNV-1a/64, FNV-1/32, FNV-1/64, HAVAL-128,3, HAVAL-128,4, HAVAL-128,5, HAVAL-160,3, HAVAL-160,4, HAVAL-160,5, JOAAT, MD2, MD4, RIPEMD-128, RIPEMD-160, Tiger/128,3, Tiger/128,4, Tiger/160,3, Tiger/160,4 by [0xb0bb](https://github.com/0xb0bb)
 
