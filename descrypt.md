@@ -8,4 +8,8 @@ broken0z4KxMC:5dUD&66
 # @hops_ch
 Tycho2izX8zFg:?SaO9L2
 Tycho2izX8zFg:g[k-gRo
+# General cross-check
+12345678901
+12345678
+12345678abcdef
 ```
