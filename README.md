@@ -41,6 +41,9 @@ For **plaintext**, it uses various conversion tricks. First password will *match
 ## [bcrypt](bcrypt.md)
 **bcrypt** truncates passwords to a maximum length of 72 characters. The passwords *match* if the first 72 characters of both passwords match.
 
+## [descrypt](descrypt.md)
+**descrypt** (traditional UNIX DES crypt) truncates passwords to a maximum length of 8 characters. The passwords *match* if the first 8 characters of both passwords match.
+
 ## [PBKDF2-HMAC-SHA1](pbkdf2-sha1.md), [PBKDF2-HMAC-SHA224](pbkdf2-sha224.md), [PBKDF2-HMAC-SHA256](pbkdf2-sha256.md)
 If you use a password longer than 64 bytes and hash it with **PBKDF2-HMAC-SHA1**, it is first *pre-hashed* with SHA1, so `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` because `sha1(password1) === bin2hex(password2)`. The similar *pre-hashing* is applied in case of **PBKDF2-HMAC-SHA224** and **PBKDF2-HMAC-SHA256**.
 
