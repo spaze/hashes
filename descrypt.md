@@ -1,4 +1,4 @@
-# James M. Hall, 2010 (https://slashdot.org/submission/1381082/Traditional-DES-collision)	12345678901
+# James M. Hall, 2010 (https://slashdot.org/submission/1381082/Traditional-DES-collision)
 hiH9IOyyrrl4k:cqjmide	12345678
 hiH9IOyyrrl4k:ifpqgio	12345678abcdef
 # @hops_ch
