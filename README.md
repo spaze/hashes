@@ -22,6 +22,9 @@ These are all the algorithms with magic hashes:
 - [MD2](md2.md)
 - [MD4](md4.md)
 - [MD5](md5.md)
+- [MurmurHash3_x86_32/Murmur3a](murmur3a.md)
+- [MurmurHash3_x86_128/Murmur3c](murmur3c.md)
+- [MurmurHash3_x64_128/Murmur3f](murmur3f.md)
 - [PHOTON-80/20/16](photon-80-20-16.md)
 - [PHOTON-128/16/16](photon-128-16-16.md)
 - [PHOTON-160/36/36](photon-160-36-36.md)
@@ -84,6 +87,7 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - u-Quark-136 by [Norbert Tihanyi & Bertalan Borsos](https://twitter.com/TihanyiNorbert/status/1358431849568030721)
 - SPONGENT-88/80/8, SPONGENT-88/176/88, SPONGENT-128/128/8, SPONGENT-128/256/128 by [Norbert Tihanyi & Bertalan Borsos](https://twitter.com/TihanyiNorbert/status/1358431849568030721)
 - xxHash by me ([#27](https://github.com/spaze/hashes/pull/27))
+- MurmurHash3 by me ([#28](https://github.com/spaze/hashes/pull/28))
 
 ### How to calculate your own
 I've used my laptop, few `for` (or `foreach`?) loops, many CPU cycles and [an external fan](https://twitter.com/spazef0rze/status/1150086642113437697) back in 2014 but today you can/should use a GPU and a modified hashcat for that. See [this write-up](https://grocid.net/2019/08/03/finding-magic-hashes-with-hashcat/) by [Carl Löndahl](https://twitter.com/carllondahl) and [0xb0bb](https://twitter.com/0xb0bb).
