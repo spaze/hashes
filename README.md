@@ -40,6 +40,10 @@ These are all the algorithms with magic hashes:
 - [Tiger/160,3](tiger160,3.md)
 - [Tiger/160,4](tiger160,4.md)
 - [Tiger/192,3](tiger192,3.md)
+- [xxHash-XXH32](xxh32.md)
+- [xxHash-XXH64](xxh64.md)
+- [xxHash-XXH3_64bits](xxh3.md)
+- [xxHash-XXH3_128bits](xxh128.md)
 
 To quote @0xb0bb, "there are other applications for magic hashes other than password comparisons (such as caching layers or data derived from the output of a hash function) where these known insecure, lesser known and pseudo-hash algorithms can be found more readily."
 
@@ -79,6 +83,7 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - PHOTON-80/20/16, PHOTON-128/16/16, PHOTON-160/36/36 by [Norbert Tihanyi & Bertalan Borsos](https://twitter.com/TihanyiNorbert/status/1358431849568030721)
 - u-Quark-136 by [Norbert Tihanyi & Bertalan Borsos](https://twitter.com/TihanyiNorbert/status/1358431849568030721)
 - SPONGENT-88/80/8, SPONGENT-88/176/88, SPONGENT-128/128/8, SPONGENT-128/256/128 by [Norbert Tihanyi & Bertalan Borsos](https://twitter.com/TihanyiNorbert/status/1358431849568030721)
+- xxHash by me ([#27](https://github.com/spaze/hashes/pull/27))
 
 ### How to calculate your own
 I've used my laptop, few `for` (or `foreach`?) loops, many CPU cycles and [an external fan](https://twitter.com/spazef0rze/status/1150086642113437697) back in 2014 but today you can/should use a GPU and a modified hashcat for that. See [this write-up](https://grocid.net/2019/08/03/finding-magic-hashes-with-hashcat/) by [Carl Löndahl](https://twitter.com/carllondahl) and [0xb0bb](https://twitter.com/0xb0bb).
