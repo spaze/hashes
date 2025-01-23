@@ -22,6 +22,7 @@ These are all the algorithms with magic hashes:
 - [MD2](md2.md)
 - [MD4](md4.md)
 - [MD5](md5.md)
+- [MD5-double](md5-double.md) `md5(md5(password))`
 - [MurmurHash3_x86_32/Murmur3a](murmur3a.md)
 - [MurmurHash3_x86_128/Murmur3c](murmur3c.md)
 - [MurmurHash3_x64_128/Murmur3f](murmur3f.md)
@@ -72,6 +73,7 @@ Use `===` when comparing anything* in PHP, not `==`. And use [`password_hash()`]
 It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552443084800), I've generated `QNKCDZO` and `240610708` in February 2014 and it has since spread all over the intertubes. Just [google it](https://www.google.cz/search?q=%22QNKCDZO%22).
 
 - MD5: [Tweet](https://twitter.com/spazef0rze/status/439352552443084800), [code](http://3v4l.org/2vrMi), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4), [Norbert Tihanyi](https://twitter.com/TihanyiNorbert), [ethernetlord](https://github.com/ethernetlord), [0xb0bb](https://github.com/0xb0bb), [myst404](https://offsec.almond.consulting/super-magic-hash.html)
+- MD5-double: [code](https://3v4l.org/XKtlm), contributions by [TheMostKnown](https://github.com/TheMostKnown)
 - SHA-1: [Tweet](https://twitter.com/spazef0rze/status/523010190900469760), [code](http://3v4l.org/tT4l8), contributions by [roycewilliams](https://github.com/spaze/hashes/pull/4), [0xb0bb](https://github.com/0xb0bb), [matlink](https://github.com/matlink), [myst404](https://offsec.almond.consulting/super-magic-hash.html), [Maxim Masiutin](https://github.com/maximmasiutin/PHP-magic-hashes-Open-MPI)
 - Plaintext: [Tweet](https://twitter.com/spazef0rze/status/522882677452832768), [code](http://3v4l.org/K3ljr)
 - bcrypt: [code](https://3v4l.org/2qc8j)
