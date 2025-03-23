@@ -97,6 +97,8 @@ I've used my laptop, few `for` (or `foreach`?) loops, many CPU cycles and [an ex
 Chick3nman & co. is also [working](https://twitter.com/Chick3nman512/status/1157748868823621638) on their version of hashcat, stay tuned.
 
 # Real collisions
+
+## MD5
 If you need a _real_ alphanumerical collision, here's a [72-byte alphanum MD5 collision](https://twitter.com/realhashbreaker/status/1770161965006008570) with 1-byte difference, 1-bit even, by Marc Stevens:
 ```
 md5("TEXTCOLLBYfGiJUETHQ4hAcKSMd5zYpgqf1YRDhkmxHkhPWptrkoyz28wnI9V0aHeAuaKnak")
@@ -106,3 +108,12 @@ md5("TEXTCOLLBYfGiJUETHQ4hEcKSMd5zYpgqf1YRDhkmxHkhPWptrkoyz28wnI9V0aHeAuaKnak")
 Note that if you register with the first password, and log in with the second, it may still mean that the site uses `bcrypt(md5($password))`, not just `md5($password)`. Such hash wrapping is sometimes used when [upgrading password hashing](https://www.michalspacek.com/upgrading-existing-password-hashes) but it should be used only temporarily.
 
 See Marc's [Project HashClash](https://github.com/cr-marcstevens/hashclash) if you're interested in these _real_ collisions or if you'd like to [create your own](https://github.com/cr-marcstevens/hashclash?tab=readme-ov-file#create-you-own-text-identical-prefix-collision).
+
+## [LM](lm-real.md)
+Real LM hash collisions by @solardiz (#35, thanks!):
+- *LM half-hash*: *plaintext1* or *plaintext2*
+- `db82323cb0693862`: `2275490` or `0/*LUZ@`
+- `44b3b60db75c15c1`: `2716388` or `1}DC<XT`
+- `585e239d32df1998`: `8351762` or `$;)5D|X`
+
+See [the tweet](https://x.com/solardiz/status/1903527938747670746) how to generate some more.
