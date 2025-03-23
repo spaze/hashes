@@ -98,7 +98,7 @@ Chick3nman & co. is also [working](https://twitter.com/Chick3nman512/status/1157
 
 # Real collisions
 
-## MD5
+## [MD5](md5-real.md)
 If you need a _real_ alphanumerical collision, here's a [72-byte alphanum MD5 collision](https://twitter.com/realhashbreaker/status/1770161965006008570) with 1-byte difference, 1-bit even, by Marc Stevens:
 ```
 md5("TEXTCOLLBYfGiJUETHQ4hAcKSMd5zYpgqf1YRDhkmxHkhPWptrkoyz28wnI9V0aHeAuaKnak")
