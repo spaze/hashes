@@ -91,7 +91,7 @@ It all started with [this tweet](https://twitter.com/spazef0rze/status/439352552
 - xxHash by me ([#27](https://github.com/spaze/hashes/pull/27))
 - MurmurHash3 by me ([#28](https://github.com/spaze/hashes/pull/28))
 
-### How to calculate your own
+### How to calculate your own magic hashes
 I've used my laptop, few `for` (or `foreach`?) loops, many CPU cycles and [an external fan](https://twitter.com/spazef0rze/status/1150086642113437697) back in 2014 but today you can/should use a GPU and a modified hashcat for that. See [this write-up](https://grocid.net/2019/08/03/finding-magic-hashes-with-hashcat/) by [Carl Löndahl](https://twitter.com/carllondahl) and [0xb0bb](https://twitter.com/0xb0bb).
 
 Chick3nman & co. is also [working](https://twitter.com/Chick3nman512/status/1157748868823621638) on their version of hashcat, stay tuned.
